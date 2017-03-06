@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="BinnenschifffahrtModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <!--Während der Generierung sind Fehler aufgetreten:
 Warnung 6002: Für Tabelle/Sicht 'C:\USERS\USER\DOCUMENTS\QUIZ\WPF_QUIZ\WPF_QUIZ\WPF_QUIZ\DATABASE.MDF.db_ddladmin.T_Fragebogen_unter_Maschine' ist kein Primärschlüssel definiert. Der Schlüssel wurde abgeleitet, und die Definition wurde als schreibgeschützte Tabelle/Sicht erstellt.-->
   <EntityType Name="T_Fragebogen_unter_Maschine">
@@ -34,7 +34,7 @@ Warnung 6002: Für Tabelle/Sicht 'C:\USERS\USER\DOCUMENTS\QUIZ\WPF_QUIZ\WPF_QUIZ
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="BinnenschifffahrtModelStoreContainer">
+  <EntityContainer Name="DatabaseModelStoreContainer">
     <EntitySet Name="T_SBF_Binnen" EntityType="Self.T_SBF_Binnen" Schema="db_ddladmin" store:Type="Tables" />
     <EntitySet Name="T_Fragebogen_unter_Maschine" EntityType="Self.T_Fragebogen_unter_Maschine" store:Type="Tables" store:Schema="db_ddladmin">
       <DefiningQuery>SELECT 

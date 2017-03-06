@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="BinnenschifffahrtModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="T_SBF_Binnen">
     <Key>
       <PropertyRef Name="P_Id" />
@@ -34,7 +34,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="Binnenschiffahrt" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="T_SBF_Binnen" EntityType="Self.T_SBF_Binnen" />
     <EntitySet Name="T_Fragebogen_unter_Maschine" EntityType="Self.T_Fragebogen_unter_Maschine" />
     <AssociationSet Name="F_Id_SBF_Binnen" Association="Self.F_Id_SBF_Binnen">
