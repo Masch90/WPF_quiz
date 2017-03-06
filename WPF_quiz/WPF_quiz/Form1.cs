@@ -51,5 +51,10 @@ namespace WPF_quiz
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
