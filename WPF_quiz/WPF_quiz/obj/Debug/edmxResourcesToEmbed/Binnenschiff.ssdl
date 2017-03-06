@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BinnenschifffahrtModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Während der Generierung sind Fehler aufgetreten:
+Warnung 6002: Für Tabelle/Sicht 'C:\USERS\USER\DOCUMENTS\QUIZ\WPF_QUIZ\WPF_QUIZ\WPF_QUIZ\DATABASE.MDF.db_ddladmin.T_Fragebogen_unter_Maschine' ist kein Primärschlüssel definiert. Der Schlüssel wurde abgeleitet, und die Definition wurde als schreibgeschützte Tabelle/Sicht erstellt.-->
+  <EntityType Name="T_Fragebogen_unter_Maschine">
+    <Key>
+      <PropertyRef Name="FragebogenNr" />
+      <PropertyRef Name="F_Id_SBF_Binnen" />
+    </Key>
+    <Property Name="FragebogenNr" Type="int" Nullable="false" />
+    <Property Name="F_Id_SBF_Binnen" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_SBF_Binnen">
+    <Key>
+      <PropertyRef Name="P_Id" />
+    </Key>
+    <Property Name="P_Id" Type="int" Nullable="false" />
+    <Property Name="Frage" Type="varchar" MaxLength="500" />
+    <Property Name="Antwort1" Type="varchar" MaxLength="500" />
+    <Property Name="Antwort2" Type="varchar" MaxLength="500" />
+    <Property Name="Antwort3" Type="varchar" MaxLength="500" />
+    <Property Name="Antwort4" Type="varchar" MaxLength="500" />
+    <Property Name="RichtigeAntwort" Type="tinyint" />
+  </EntityType>
+  <Association Name="F_Id_SBF_Binnen">
+    <End Role="T_SBF_Binnen" Type="Self.T_SBF_Binnen" Multiplicity="1" />
+    <End Role="T_Fragebogen_unter_Maschine" Type="Self.T_Fragebogen_unter_Maschine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_SBF_Binnen">
+        <PropertyRef Name="P_Id" />
+      </Principal>
+      <Dependent Role="T_Fragebogen_unter_Maschine">
+        <PropertyRef Name="F_Id_SBF_Binnen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BinnenschifffahrtModelStoreContainer">
+    <EntitySet Name="T_SBF_Binnen" EntityType="Self.T_SBF_Binnen" Schema="db_ddladmin" store:Type="Tables" />
+    <EntitySet Name="T_Fragebogen_unter_Maschine" EntityType="Self.T_Fragebogen_unter_Maschine" store:Type="Tables" store:Schema="db_ddladmin">
+      <DefiningQuery>SELECT 
+    [T_Fragebogen_unter_Maschine].[FragebogenNr] AS [FragebogenNr], 
+    [T_Fragebogen_unter_Maschine].[F_Id_SBF_Binnen] AS [F_Id_SBF_Binnen]
+    FROM [db_ddladmin].[T_Fragebogen_unter_Maschine] AS [T_Fragebogen_unter_Maschine]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="F_Id_SBF_Binnen" Association="Self.F_Id_SBF_Binnen">
+      <End Role="T_SBF_Binnen" EntitySet="T_SBF_Binnen" />
+      <End Role="T_Fragebogen_unter_Maschine" EntitySet="T_Fragebogen_unter_Maschine" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
