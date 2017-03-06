@@ -18,3 +18,4 @@ C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\bin\Debug\EntityFramewor
 C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\bin\Debug\EntityFramework.xml
 C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\bin\Debug\de\EntityFramework.resources.dll
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\obj\Debug\WPF_quiz.konfiguration.resources

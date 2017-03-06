@@ -68,20 +68,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Binnenschiffahrt.Context.cs">
+    <Compile Include="Binnenschiff.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Binnenschiffahrt.Context.tt</DependentUpon>
+      <DependentUpon>Binnenschiff.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Binnenschiffahrt.cs">
+    <Compile Include="Binnenschiff.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Binnenschiffahrt.tt</DependentUpon>
+      <DependentUpon>Binnenschiff.tt</DependentUpon>
     </Compile>
-    <Compile Include="Binnenschiffahrt.Designer.cs">
+    <Compile Include="Binnenschiff.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Binnenschiffahrt.edmx</DependentUpon>
+      <DependentUpon>Binnenschiff.edmx</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -89,16 +89,25 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="konfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="konfiguration.Designer.cs">
+      <DependentUpon>konfiguration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="T_Fragebogen_unter_Maschine.cs">
-      <DependentUpon>Binnenschiffahrt.tt</DependentUpon>
+      <DependentUpon>Binnenschiff.tt</DependentUpon>
     </Compile>
     <Compile Include="T_SBF_Binnen.cs">
-      <DependentUpon>Binnenschiffahrt.tt</DependentUpon>
+      <DependentUpon>Binnenschiff.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="konfiguration.resx">
+      <DependentUpon>konfiguration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,22 +118,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="Binnenschiffahrt.edmx">
+    <EntityDeploy Include="Binnenschiff.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Binnenschiffahrt.Designer.cs</LastGenOutput>
+      <LastGenOutput>Binnenschiff.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Binnenschiffahrt.Context.tt">
+    <None Include="Binnenschiff.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Binnenschiffahrt.edmx</DependentUpon>
-      <LastGenOutput>Binnenschiffahrt.Context.cs</LastGenOutput>
+      <DependentUpon>Binnenschiff.edmx</DependentUpon>
+      <LastGenOutput>Binnenschiff.Context.cs</LastGenOutput>
     </None>
-    <None Include="Binnenschiffahrt.edmx.diagram">
-      <DependentUpon>Binnenschiffahrt.edmx</DependentUpon>
+    <None Include="Binnenschiff.edmx.diagram">
+      <DependentUpon>Binnenschiff.edmx</DependentUpon>
     </None>
-    <None Include="Binnenschiffahrt.tt">
+    <None Include="Binnenschiff.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Binnenschiffahrt.edmx</DependentUpon>
-      <LastGenOutput>Binnenschiffahrt.cs</LastGenOutput>
+      <DependentUpon>Binnenschiff.edmx</DependentUpon>
+      <LastGenOutput>Binnenschiff.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
