@@ -1,1 +1,11 @@
 c:\users\user\documents\visual studio 2013\Projects\WPF_quiz\WPF_quiz\bin\Debug\WPF_quiz.exe.config
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\bin\Debug\WPF_quiz.exe.config
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\bin\Debug\Database.mdf
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\bin\Debug\Database_log.ldf
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\bin\Debug\WPF_quiz.exe
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\bin\Debug\WPF_quiz.pdb
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\obj\Debug\WPF_quiz.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\obj\Debug\WPF_quiz.Properties.Resources.resources
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\obj\Debug\WPF_quiz.csproj.GenerateResource.Cache
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\obj\Debug\WPF_quiz.exe
+C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\obj\Debug\WPF_quiz.pdb
