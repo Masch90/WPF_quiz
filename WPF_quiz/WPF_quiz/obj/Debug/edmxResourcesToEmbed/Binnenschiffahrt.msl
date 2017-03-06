@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="Binnenschiffahrt">
+    <EntitySetMapping Name="T_SBF_Binnen">
+      <EntityTypeMapping TypeName="DatabaseModel.T_SBF_Binnen">
+        <MappingFragment StoreEntitySet="T_SBF_Binnen">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="Frage" ColumnName="Frage" />
+          <ScalarProperty Name="Antwort1" ColumnName="Antwort1" />
+          <ScalarProperty Name="Antwort2" ColumnName="Antwort2" />
+          <ScalarProperty Name="Antwort3" ColumnName="Antwort3" />
+          <ScalarProperty Name="Antwort4" ColumnName="Antwort4" />
+          <ScalarProperty Name="RichtigeAntwort" ColumnName="RichtigeAntwort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Fragebogen_unter_Maschine">
+      <EntityTypeMapping TypeName="DatabaseModel.T_Fragebogen_unter_Maschine">
+        <MappingFragment StoreEntitySet="T_Fragebogen_unter_Maschine">
+          <ScalarProperty Name="FragebogenNr" ColumnName="FragebogenNr" />
+          <ScalarProperty Name="F_Id_SBF_Binnen" ColumnName="F_Id_SBF_Binnen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -16,5 +16,11 @@ namespace WPF_quiz
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DatabaseEntities dbent = new DatabaseEntities();
+        }
+
     }
 }

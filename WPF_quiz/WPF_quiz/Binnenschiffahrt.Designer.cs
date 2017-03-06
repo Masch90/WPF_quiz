@@ -1,4 +1,4 @@
-﻿// Die T4-Codegenerierung ist für Modell 'C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\Binnenschiff.edmx' aktiviert. 
+﻿// Die T4-Codegenerierung ist für Modell 'C:\Users\user\Documents\quiz\WPF_quiz\WPF_quiz\WPF_quiz\Binnenschiffahrt.edmx' aktiviert. 
 // Um die Generierung von Legacycode zu aktivieren, ändern Sie den Wert der Designer-Eigenschaft 'Code Generation Strategy'
 // in 'Legacy ObjectContext'. Diese Eigenschaft wird im Eigenschaftenfenster angezeigt, wenn das Modell
 // im Designer geöffnet ist.

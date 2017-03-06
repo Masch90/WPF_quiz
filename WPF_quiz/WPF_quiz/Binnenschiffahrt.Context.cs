@@ -13,10 +13,10 @@ namespace WPF_quiz
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DatabaseEntities : DbContext
+    public partial class Binnenschiffahrt : DbContext
     {
-        public DatabaseEntities()
-            : base("name=DatabaseEntities")
+        public Binnenschiffahrt()
+            : base("name=Binnenschiffahrt")
         {
         }
     

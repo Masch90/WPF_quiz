@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BinnenschifffahrtModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Während der Generierung sind Fehler aufgetreten:
 Warnung 6002: Für Tabelle/Sicht 'C:\USERS\USER\DOCUMENTS\QUIZ\WPF_QUIZ\WPF_QUIZ\WPF_QUIZ\DATABASE.MDF.db_ddladmin.T_Fragebogen_unter_Maschine' ist kein Primärschlüssel definiert. Der Schlüssel wurde abgeleitet, und die Definition wurde als schreibgeschützte Tabelle/Sicht erstellt.-->
         <EntityType Name="T_Fragebogen_unter_Maschine">
@@ -39,7 +39,7 @@ Warnung 6002: Für Tabelle/Sicht 'C:\USERS\USER\DOCUMENTS\QUIZ\WPF_QUIZ\WPF_QUIZ
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="BinnenschifffahrtModelStoreContainer">
+        <EntityContainer Name="DatabaseModelStoreContainer">
           <EntitySet Name="T_SBF_Binnen" EntityType="Self.T_SBF_Binnen" Schema="db_ddladmin" store:Type="Tables" />
           <EntitySet Name="T_Fragebogen_unter_Maschine" EntityType="Self.T_Fragebogen_unter_Maschine" store:Type="Tables" store:Schema="db_ddladmin">
             <DefiningQuery>SELECT 
@@ -56,7 +56,7 @@ Warnung 6002: Für Tabelle/Sicht 'C:\USERS\USER\DOCUMENTS\QUIZ\WPF_QUIZ\WPF_QUIZ
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="BinnenschifffahrtModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="T_SBF_Binnen">
           <Key>
             <PropertyRef Name="P_Id" />
@@ -91,7 +91,7 @@ Warnung 6002: Für Tabelle/Sicht 'C:\USERS\USER\DOCUMENTS\QUIZ\WPF_QUIZ\WPF_QUIZ
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Binnenschiffahrt" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="T_SBF_Binnen" EntityType="Self.T_SBF_Binnen" />
           <EntitySet Name="T_Fragebogen_unter_Maschine" EntityType="Self.T_Fragebogen_unter_Maschine" />
           <AssociationSet Name="F_Id_SBF_Binnen" Association="Self.F_Id_SBF_Binnen">
@@ -104,9 +104,9 @@ Warnung 6002: Für Tabelle/Sicht 'C:\USERS\USER\DOCUMENTS\QUIZ\WPF_QUIZ\WPF_QUIZ
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="BinnenschifffahrtModelStoreContainer" CdmEntityContainer="DatabaseEntities">
+        <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="Binnenschiffahrt">
           <EntitySetMapping Name="T_SBF_Binnen">
-            <EntityTypeMapping TypeName="BinnenschifffahrtModel.T_SBF_Binnen">
+            <EntityTypeMapping TypeName="DatabaseModel.T_SBF_Binnen">
               <MappingFragment StoreEntitySet="T_SBF_Binnen">
                 <ScalarProperty Name="P_Id" ColumnName="P_Id" />
                 <ScalarProperty Name="Frage" ColumnName="Frage" />
@@ -119,7 +119,7 @@ Warnung 6002: Für Tabelle/Sicht 'C:\USERS\USER\DOCUMENTS\QUIZ\WPF_QUIZ\WPF_QUIZ
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="T_Fragebogen_unter_Maschine">
-            <EntityTypeMapping TypeName="BinnenschifffahrtModel.T_Fragebogen_unter_Maschine">
+            <EntityTypeMapping TypeName="DatabaseModel.T_Fragebogen_unter_Maschine">
               <MappingFragment StoreEntitySet="T_Fragebogen_unter_Maschine">
                 <ScalarProperty Name="FragebogenNr" ColumnName="FragebogenNr" />
                 <ScalarProperty Name="F_Id_SBF_Binnen" ColumnName="F_Id_SBF_Binnen" />
