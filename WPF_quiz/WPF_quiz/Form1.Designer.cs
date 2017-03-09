@@ -58,6 +58,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -68,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(678, 146);
+            this.label1.Location = new System.Drawing.Point(546, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 39);
             this.label1.TabIndex = 0;
@@ -87,7 +88,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(189, 191);
+            this.button2.Location = new System.Drawing.Point(79, 132);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(171, 23);
             this.button2.TabIndex = 2;
@@ -110,7 +111,7 @@
             "STU",
             "VW",
             "XYZ"});
-            this.listBox1.Location = new System.Drawing.Point(643, 269);
+            this.listBox1.Location = new System.Drawing.Point(533, 251);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(213, 43);
             this.listBox1.TabIndex = 5;
@@ -155,6 +156,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.listBox1);
             this.tabPage1.Controls.Add(this.label2);
@@ -389,6 +391,15 @@
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(205, 234);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Loslegen";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -443,6 +454,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button6;
 
 
 
