@@ -91,18 +91,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
+<!--
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-=======
+-->
     <Compile Include="T_Fragebogen_unter_Maschine.cs">
       <DependentUpon>Binnenschiff.tt</DependentUpon>
     </Compile>
     <Compile Include="T_SBF_Binnen.cs">
       <DependentUpon>Binnenschiff.tt</DependentUpon>
     </Compile>
->>>>>>> 4c4c1f9baa576e58d60a63d9ed769e461159ec00
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
